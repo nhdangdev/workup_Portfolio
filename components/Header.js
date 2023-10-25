@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header className='tw-absolute tw-z-30  tw-w-full'>Header</header>
   )
 }
 

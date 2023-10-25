@@ -54,8 +54,17 @@ const Home = () => {
         </div>
       </div>
       {/* Image */}
-      <div>image</div>
-    </div >
+      <div className='tw-w-[1200px] tw-h-full tw-absolute tw-right-0 tw-bottom-0'>
+        {/* bg image */}
+        <div className='tw-bg-none xl:tw-bg-explosion xl:tw-bg-cover xl:tw-bg-right xl:tw-bg-no-repeat tw-w-full tw-h-full tw-absolute tw-mix-blend-color-dodge tw-translate-z-0'></div>
+        {/* particles */}
+        <div>Particles</div>
+        {/* Avatar */}
+        <div>
+          <Avatar />
+        </div>
+      </div>
+    </div>
   )
 }
 
