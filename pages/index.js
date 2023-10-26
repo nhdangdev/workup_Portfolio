@@ -53,16 +53,22 @@ const Home = () => {
           </motion.div>
         </div>
       </div>
-      {/* Image */}
+      {/* image */}
       <div className='tw-w-[1200px] tw-h-full tw-absolute tw-right-0 tw-bottom-0'>
-        {/* bg image */}
+        {/* bg img */}
         <div className='tw-bg-none xl:tw-bg-explosion xl:tw-bg-cover xl:tw-bg-right xl:tw-bg-no-repeat tw-w-full tw-h-full tw-absolute tw-mix-blend-color-dodge tw-translate-z-0'></div>
         {/* particles */}
-        <div>Particles</div>
-        {/* Avatar */}
-        <div>
+        <ParticlesContainer />
+        {/* avatar img*/}
+        <motion.div
+          variants={fadeIn('up', 0.5)}
+          inital='hidden'
+          animate='show'
+          exit='hidden'
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className='tw-w-full tw-h-full tw-max-w-[737px] tw-max-h-[678px] tw-absolute tw-bottom-32 lg:tw-bottom-0 lg:tw-right-[8%]'>
           <Avatar />
-        </div>
+        </motion.div>
       </div>
     </div>
   )
